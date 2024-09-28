@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>URL Shortener App</h1>
+            <hr>
+
+            <!-- URL Input Section -->
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="input-group">
+                        <input id="urlInput" type="text" class="form-control" placeholder="Enter URL to shorten">
+                        <button class="btn btn-primary btn-shorten" onclick="shortenURL()">Shorten URL</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- URL Table Section -->
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Original URL</th>
+                                <th scope="col">Shortened URL</th>
+                            </tr>
+                        </thead>
+                        <tbody id="urlTableBody">
+                            <!-- Data will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+</html>

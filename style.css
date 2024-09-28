@@ -1,0 +1,31 @@
+body {
+    background-color: #f7f7f7;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+}
+
+table {
+    margin-top: 30px;
+    background-color: #fff;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.short-url {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.short-url:hover {
+    text-decoration: underline;
+}
